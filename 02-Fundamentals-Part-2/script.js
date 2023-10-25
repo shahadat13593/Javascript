@@ -133,20 +133,20 @@
 
 // ! Coding Challenge #1
 
-const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
+// const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
 
-const averageOfDolphins = calcAverage(44, 23, 71);
-const averageOfKoalas = calcAverage(65, 54, 49);
+// const averageOfDolphins = calcAverage(44, 23, 71);
+// const averageOfKoalas = calcAverage(65, 54, 49);
 
-const checkWinner = function (averageOfDolphins, averageOfKoalas) {
-  if (averageOfDolphins >= averageOfKoalas * 2) {
-    console.log(`Dolphins win (${averageOfDolphins} vs. ${averageOfKoalas})`);
-  } else if (averageOfKoalas >= averageOfDolphins * 2) {
-    console.log(`Koalas win (${averageOfKoalas} vs. ${averageOfDolphins})`);
-  } else {
-    console.log(`Don't fulfill the requirement!`);
-  }
-};
+// const checkWinner = function (averageOfDolphins, averageOfKoalas) {
+//   if (averageOfDolphins >= averageOfKoalas * 2) {
+//     console.log(`Dolphins win (${averageOfDolphins} vs. ${averageOfKoalas})`);
+//   } else if (averageOfKoalas >= averageOfDolphins * 2) {
+//     console.log(`Koalas win (${averageOfKoalas} vs. ${averageOfDolphins})`);
+//   } else {
+//     console.log(`Don't fulfill the requirement!`);
+//   }
+// };
 
-checkWinner(averageOfDolphins, averageOfKoalas);
-checkWinner(calcAverage(85, 54, 41), calcAverage(23, 34, 27));
+// checkWinner(averageOfDolphins, averageOfKoalas);
+// checkWinner(calcAverage(85, 54, 41), calcAverage(23, 34, 27));
