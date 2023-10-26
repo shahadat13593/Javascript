@@ -215,22 +215,22 @@
 // const friends = ["Michael", "Steven", "Peter"];
 // console.log(friends);
 
-//  Note: push method adds elements to the end of an array
+// * Note: push method adds elements to the end of an array
 
 // const newLength = friends.push("Maliha");
 // console.log(friends);
 // console.log(newLength);
 
-// NOTE: unshift method adds elements to the beginning of an array
+// * Note: unshift method adds elements to the beginning of an array
 // friends.unshift("Takwa");
 // console.log(friends);
 
-// NOTE: pop method remove elements to the end of an array
+// * Note: pop method remove elements to the end of an array
 
 // friends.pop();
 // console.log(friends);
 
-// NOTE: shift method remove elements to the beginning of an array
+// * Note: shift method remove elements to the beginning of an array
 
 // friends.shift();
 // console.log(friends);
@@ -298,13 +298,13 @@
 
 // ! Dot vs. Bracket Notation
 
-const shahadat = {
-  firstName: "Shahadat",
-  lastName: "Hossain",
-  age: 2023 - 2001,
-  job: "Coder",
-  friends: ["Raiyan", "Maliha", "Zahid"],
-};
+// const shahadat = {
+//   firstName: "Shahadat",
+//   lastName: "Hossain",
+//   age: 2023 - 2001,
+//   job: "Coder",
+//   friends: ["Raiyan", "Maliha", "Zahid"],
+// };
 
 // console.log(shahadat);
 
@@ -314,6 +314,7 @@ const shahadat = {
 
 // * Bracket Notation
 
+// console.log(shahadat["friends"][0]);
 // console.log(shahadat[`lastName`]);
 // console.log(shahadat[`${"jo" + "b"}`]); // side-note: isn't it cool😎
 
@@ -356,3 +357,83 @@ const shahadat = {
 // );
 
 // ! Object Methods
+
+// const shahadat = {
+//   firstName: "Shahadat",
+//   lastName: "Hossain",
+//   birthYear: 2001,
+//   job: "Coder",
+//   friends: ["Raiyan", "Maliha", "Zahid"],
+//   hasDriverLicense: true,
+//   // calcAge: function () {
+//   //   // console.log(this);
+//   //   const age = 2023 - this.birthYear;
+//   //   return age;
+//   // },
+//   calcAge: function () {
+//     // console.log(this);
+//     this.age = 2023 - this.birthYear;
+//     return this.age;
+//   },
+
+//   getSummary: function () {
+//     return `${this.firstName} is ${this.age}-years old ${
+//       this.job
+//     }, and he has ${
+//       this.hasDriverLicense === true ? "a" : "no"
+//     } driver's license`;
+//   },
+// };
+
+// console.log(shahadat.calcAge());
+
+// console.log(shahadat.age);
+// console.log(shahadat.age);
+// console.log(shahadat.age);
+// // console.log(shahadat["calcAge"]());
+
+// console.log(shahadat.getSummary());
+
+// ! Coding CHALLENGE #3
+
+// const bmiCompare = {
+//   fullNameOfMark: "Mark Miller",
+//   marksWeights: 78,
+//   marksHeight: 1.69,
+//   fullNameOfJohn: "John Smith",
+//   johnsWeights: 92,
+//   johnsHeight: 1.95,
+//   calcBMI: function () {
+//     this.marksBMI = this.marksWeights / (this.marksHeight * this.marksHeight);
+//     this.johnsBMI = this.johnsWeights / (this.johnsHeight * this.johnsHeight);
+
+//     if (this.marksBMI > this.johnsBMI) {
+//       return `${this.fullNameOfMark}'s BMI (${this.marksBMI}) higher than ${this.fullNameOfJohn}'s (${this.johnsBMI})!`;
+//     } else {
+//       return `${this.fullNameOfJohn}'s BMI (${this.johnsBMI}) higher than ${this.fullNameOfMark}'s (${this.marksBMI}!`;
+//     }
+//   },
+// };
+
+// console.log(bmiCompare.calcBMI());
+// console.log(bmiCompare.marksBMI);
+// console.log(bmiCompare.johnsBMI);
+
+// ! Iteration The for Loop
+
+// console.log(`Lifting weights repetition 1 🏋️‍♂️`);
+// console.log(`Lifting weights repetition 2 🏋️‍♂️`);
+// console.log(`Lifting weights repetition 3 🏋️‍♂️`);
+// console.log(`Lifting weights repetition 4 🏋️‍♂️`);
+// console.log(`Lifting weights repetition 5 🏋️‍♂️`);
+// console.log(`Lifting weights repetition 6 🏋️‍♂️`);
+// console.log(`Lifting weights repetition 7 🏋️‍♂️`);
+// console.log(`Lifting weights repetition 8 🏋️‍♂️`);
+// console.log(`Lifting weights repetition 9 🏋️‍♂️`);
+// console.log(`Lifting weights repetition 10 🏋️‍♂️`);
+
+// * Note: for loop keeps running while condition is true
+
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`Lifting weights repetition ${rep} 🏋️‍♂️`);
+}
