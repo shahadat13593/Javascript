@@ -434,6 +434,128 @@
 
 // * Note: for loop keeps running while condition is true
 
-for (let rep = 1; rep <= 10; rep++) {
-  console.log(`Lifting weights repetition ${rep} 🏋️‍♂️`);
-}
+// for (let rep = 1; rep <= 10; rep++) {
+//   console.log(`Lifting weights repetition ${rep} 🏋️‍♂️`);
+// }
+
+// ! Looping Arrays, Breaking and Continuing
+
+// const shahadatArray = [
+//   "Shahadat",
+//   "Hossain",
+//   2023 - 2001,
+//   "Shahadat",
+//   ["Raiyan", "Maliha", "Zahid"],
+//   true,
+// ];
+
+// const typeArrayOfShahadat = [];
+// for (let i = 0; i < shahadatArray.length; i++) {
+//   console.log(shahadatArray[i], typeof shahadatArray[i]);
+
+//   typeArrayOfShahadat.push(typeof shahadatArray[i]);
+//   //* typeArrayOfShahadat[i] = typeof shahadatArray[i];
+//   // typeArrayOfShahadat.unshift(typeof shahadatArray[i]);
+// }
+
+// console.log(typeArrayOfShahadat);
+
+// const birthYears = [1990, 1967, 2001, 2010, 2018];
+
+// const calcAgeMethod = {
+//   birthYears: [1990, 1967, 2001, 2010, 2018, 2000],
+//   ages: [],
+//   currentYear: 2023,
+//   calcAge: function () {
+//     for (let i = 0; i < this.birthYears.length; i++) {
+//       this.ages.push(this.currentYear - this.birthYears[i]);
+//     }
+
+//     console.log(this.ages);
+//   },
+// };
+
+// calcAgeMethod.calcAge();
+
+// const birthYears = [1990, 1967, 2001, 2010, 2018, 2000];
+// const calcAge = (birthYear, currentYear = 2023) => currentYear - birthYear;
+// const ages = [];
+// for (let i = 0; i < birthYears.length; i++) {
+//   ages.push(calcAge(birthYears[i]));
+// }
+// console.log(ages);
+
+// ? Continuing
+
+// * Note: Continue is to exit the current iteration of the loop and go the next iteration
+
+// const shahadatArray = [
+//   "Shahadat",
+//   "Hossain",
+//   2023 - 2001,
+//   "coder",
+//   ["Raiyan", "Maliha", "Zahid"],
+//   true,
+// ];
+
+// console.log(`-------- Only String --------`);
+// for (let i = 0; i < shahadatArray.length; i++) {
+//   if (typeof shahadatArray[i] !== "string") continue;
+//   console.log(shahadatArray[i]);
+// }
+
+// console.log(`-------- Only String --------`);
+// for (let i = 0; i < shahadatArray.length; i++) {
+//   if (typeof shahadatArray[i] !== "string") continue;
+//   console.log(shahadatArray[i]);
+// }
+
+// * Note: Break is used to completely terminate the whole loop
+
+// console.log(`-------- brake when number is found --------`);
+// for (let i = 0; i < shahadatArray.length; i++) {
+// Example: one way
+// console.log(shahadatArray[i]);
+// if (typeof shahadatArray[i] === "number") break;
+
+// @ Example: Other way
+//   if (typeof shahadatArray[i] === "number") break;
+//   console.log(shahadatArray[i]);
+// }
+
+// ! Looping Backwards and Loops in Loops
+
+const shahadatArray = [
+  "Shahadat",
+  "Hossain",
+  2023 - 2001,
+  "coder",
+  ["Raiyan", "Maliha", "Zahid"],
+  true,
+];
+
+// NOTE Forward
+// console.log("----------- forward --------------");
+
+// LINK 0, 1, .... 5
+
+// for (let i = 0; i < shahadatArray.length; i++) {
+//   console.log(shahadatArray[i]);
+// }
+// NOTE backward
+// console.log("----------- backward --------------");
+
+// LINK 5, 4, .... 0
+
+// for (let i = shahadatArray.length - 1; i >= 0; i--) {
+//   console.log(shahadatArray[i]);
+// }
+
+// Note: Loop inside another loop
+// for (let exercise = 1; exercise < 4; exercise++) {
+//   console.log(`---------- Starting Exercise ${exercise} ----------`);
+
+//   for (let rep = 1; rep < 6; rep++) {
+//     console.log(`Exercise${exercise}: Lifting weight repetition ${rep} 🏋️‍♂️`);
+//   }
+// }
