@@ -150,3 +150,209 @@
 
 // checkWinner(averageOfDolphins, averageOfKoalas);
 // checkWinner(calcAverage(85, 54, 41), calcAverage(23, 34, 27));
+
+// ! Introduction to Arrays
+
+// const friend1 = "Michael";
+// const friend2 = "Steven";
+// const friend3 = "Peter";
+
+//  ? Note: We have two way to create Arrays
+
+//  Example: First Way:
+// const friends = ["Michael", "Steven", "Peter"];
+// console.log(friends);
+
+//  Example: Second Way:
+// const years = new Array(1991, 1984, 2008, 2020);
+// console.log(years);
+
+// console.log(friends[0]);
+// console.log(friends[2]);
+
+// console.log(friends.length);
+
+// console.log(friends[friends.length - 1]); // NOTE: Array is 0 based
+
+// const names = prompt("Write names: ").split(",");
+
+// const nameArray = new Array(...names);
+// console.log(nameArray[nameArray.length - 1]);
+
+// friends[2] = "Jay";
+// console.log(friends);
+
+// ! Note: Only Primitive values are immutable ( side-note: when we declare it with ('const') ), But array is not primitive.
+
+// friends = ["Bob", "Alice"];
+// console.log(friends); ( side-note: can't do this )
+
+// const firstName = "Shahadat";
+// const shahadat = [firstName, "Hossain", 2023 - 2001, "Student", friends];
+
+// console.log(shahadat);
+// console.log(shahadat.length);
+
+//! Exercise
+// const calcAge = (birthYear, currentYear = 2023) => currentYear - birthYear;
+
+// const birthYears = [1990, 1967, 2001, 2010, 2018];
+
+// console.log(calcAge(birthYears[2]));
+// console.log(calcAge(birthYears[0]));
+// console.log(calcAge(birthYears[birthYears.length - 1]));
+
+// const ages = new Array(
+//   calcAge(birthYears[2]),
+//   calcAge(birthYears[0]),
+//   calcAge(birthYears[birthYears.length - 1])
+// );
+
+// console.log(ages);
+
+// ! Basic Array Operations (Methods)
+
+// const friends = ["Michael", "Steven", "Peter"];
+// console.log(friends);
+
+//  Note: push method adds elements to the end of an array
+
+// const newLength = friends.push("Maliha");
+// console.log(friends);
+// console.log(newLength);
+
+// NOTE: unshift method adds elements to the beginning of an array
+// friends.unshift("Takwa");
+// console.log(friends);
+
+// NOTE: pop method remove elements to the end of an array
+
+// friends.pop();
+// console.log(friends);
+
+// NOTE: shift method remove elements to the beginning of an array
+
+// friends.shift();
+// console.log(friends);
+
+// NOTE: find index number
+// console.log(friends.indexOf("Steven"));
+// console.log(friends.indexOf("bob"));
+
+// NOTE: check if a elements is available or not based on boolean form
+
+// console.log(friends.includes("Shahadat"));
+
+// friends.push(23);
+// console.log(friends.includes("23")); // side-note: use (===)
+// console.log(friends.includes(23)); // side-note: use (===)
+
+// if (friends.includes("Peter")) {
+//   console.log("Do you have friend called Peter?");
+// }
+
+// ! Coding Challenge #2
+
+// const calcTip = function (bill, tip1 = 0.15, tip2 = 0.2) {
+//   const tip = bill >= 50 && bill <= 300 ? bill * tip1 : bill * tip2;
+//   return tip;
+// };
+
+// const calcTotalBill = (bills, tips) => bills + tips;
+
+// const bills = new Array(125, 555, 44);
+// const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+
+// console.log(bills);
+// console.log(tips);
+
+// const totalBill = new Array(
+//   calcTotalBill(bills[0], tips[0]),
+//   calcTotalBill(bills[1], tips[1]),
+//   calcTotalBill(bills[2], tips[2])
+// );
+
+// console.log(totalBill);
+
+// ! Introduction to Objects
+
+// const shahadatArray = [
+//   "Shahadat",
+//   "Hossain",
+//   2023 - 2001,
+//   "Shahadat",
+//   ["Raiyan", "Maliha", "Zahid"],
+// ];
+
+// console.log(shahadatArray);
+
+// const shahadat = {
+//   firstName: "Shahadat",
+//   lastName: "Hossain",
+//   age: 2023 - 2001,
+//   job: "Coder",
+//   friends: ["Raiyan", "Maliha", "Zahid"],
+// };
+
+// console.log(shahadat);
+
+// ! Dot vs. Bracket Notation
+
+const shahadat = {
+  firstName: "Shahadat",
+  lastName: "Hossain",
+  age: 2023 - 2001,
+  job: "Coder",
+  friends: ["Raiyan", "Maliha", "Zahid"],
+};
+
+// console.log(shahadat);
+
+// * Dot Notation
+// console.log(shahadat.lastName);
+// console.log(shahadat.age);
+
+// * Bracket Notation
+
+// console.log(shahadat[`lastName`]);
+// console.log(shahadat[`${"jo" + "b"}`]); // side-note: isn't it cool😎
+
+// const nameKey = "Name";
+
+// console.log(
+//   shahadat[
+//     `${
+//       shahadat.firstName.length > shahadat.lastName.length
+//         ? "first" + nameKey
+//         : "last" + nameKey
+//     }`
+//   ]
+// );
+
+// const interestedIn = prompt(
+//   "What do you want to know about shahadat? (firstName,lastName,age,job,friends)"
+// );
+
+// if (shahadat[interestedIn]) {
+//   console.log(shahadat[interestedIn]);
+// } else {
+//   console.log(`Type an existed Option!`);
+// }
+
+// ? adding new property to the Objects
+
+// shahadat.location = "Bangladesh";
+
+// shahadat["email"] = "shahadat15-13593@diu.edu.bd";
+
+// console.table(shahadat);
+
+// console.log(shahadat.friends[0]);
+
+// console.log(
+//   `${shahadat.firstName} has ${shahadat.friends.length} friend${
+//     shahadat.friends.length > 1 ? "s" : ""
+//   }, and his best friend is ${shahadat.friends[0]}`
+// );
+
+// ! Object Methods
