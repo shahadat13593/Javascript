@@ -525,14 +525,14 @@
 
 // ! Looping Backwards and Loops in Loops
 
-const shahadatArray = [
-  "Shahadat",
-  "Hossain",
-  2023 - 2001,
-  "coder",
-  ["Raiyan", "Maliha", "Zahid"],
-  true,
-];
+// const shahadatArray = [
+//   "Shahadat",
+//   "Hossain",
+//   2023 - 2001,
+//   "coder",
+//   ["Raiyan", "Maliha", "Zahid"],
+//   true,
+// ];
 
 // NOTE Forward
 // console.log("----------- forward --------------");
@@ -559,3 +559,46 @@ const shahadatArray = [
 //     console.log(`Exercise${exercise}: Lifting weight repetition ${rep} 🏋️‍♂️`);
 //   }
 // }
+
+// ! The while Loop
+
+// for (let rep = 1; rep <= 10; rep++) {
+//   console.log(`Lifting weights repetition ${rep} 🏋️‍♂️`);
+// }
+
+// let rep = 1;
+// while (rep <= 10) {
+//   console.log(`Lifting weights repetition ${rep} 🏋️‍♂️`);
+
+//   rep++;
+// }
+
+// let dice = Math.trunc(Math.random() * 6) + 1;
+// while (dice !== 6) {
+//   console.log(`You rolled a ${dice}`);
+//   dice = Math.trunc(Math.random() * 6) + 1;
+//   if (dice === 6) {
+//     console.log(`Dice value is ${dice}. So the loop is end!`);
+//   }
+// }
+
+// ! Coding Challenge #4
+
+// const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+
+// const tips = [];
+// const totals = [];
+
+// const calcTip = (bill, tip1 = 0.15, tip2 = 0.2) => {
+//   const tip = bill >= 50 && bill <= 300 ? bill * tip1 : bill * tip2;
+
+//   return tip;
+// };
+
+// for (let i = 0; i < bills.length; i++) {
+//   tips.push(calcTip(bills[i]));
+//   totals.push(bills[i] + tips[i]);
+// }
+
+// console.log(tips);
+// console.log(totals);
